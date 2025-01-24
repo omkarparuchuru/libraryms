@@ -1,0 +1,38 @@
+body{
+    
+    text-align: center;
+}
+body{
+    background-color: lightblue;
+    text-align: left;
+}
+.main{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.805);
+    position: absolute;
+    right: 400px;
+    width: 500px;    
+    border: solid black;
+    height: 60%;
+    width:40%;
+    padding: 60px;
+    margin: auto;
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 550px;
+    width: 400px; 
+}
+.ma{
+    display: flex;
+    justify-content: start;
+}
+div label{
+    justify-content: start;
+}
