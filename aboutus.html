@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/abouts/about-5/assets/css/about-5.css">
+<style>
+    .section {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    color: white;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section > .sectiontitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.section > .sectiontitle:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.section > .sectiontitle a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.may {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0078d4;
+    color: white;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 91px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.may img {
+    position: absolute;
+    left: 20px;
+    height: 92px;
+    width: auto;
+    z-index: 2; /* Ensures the logo appears above the marquee */
+}
+
+.may marquee {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    z-index: 1; /* Allows marquee text to scroll behind the logo */
+    position: absolute;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+</style>
+</head>
+<body>
+    <!-- About 5 - Bootstrap Brain Component -->
+       <!-- Header Section -->
+  <div class="may">
+    <img src="images\logo-removebg-preview.png" alt="Logo" height="200px">
+    <marquee behavior="" direction="left">
+        <h2>WELCOME TO 'O' STORES & LIBRARY</h2>
+    </marquee>
+</div>
+
+
+  <!-- Navbar Section -->
+  <div class="section">
+    <div class="sectiontitle">
+      <a href="index.html">HOME</a>
+    </div>
+    <div class="sectiontitle">
+      <a href="aboutus.html">ABOUT US</a>
+    </div>
+    <div class="sectiontitle">
+      <a href="books.html">BOOKS</a>
+    </div>
+    <div class="sectiontitle">
+      <a href="membership.html">MEMBERSHIP</a>
+    </div>
+    <div class="sectiontitle">
+      <a href="borrowbooks.html">BORROW BOOKS</a>
+    </div>
+  </div>
+
+<section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h3 class="fs-5 mb-2 text-secondary text-uppercase">About</h3>
+          <h2 class="display-5 mb-4">Our journey began with a dream of redefining how the world perceives design.</h2>
+          <button type="button" class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5">Discover More</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0">
+        <div class="col-12 col-lg-6">
+          <article>
+            <div class="card border-0">
+              <img class="card-img-top img-fluid m-0" loading="lazy" src="./assets/img/about-img-1.jpg" alt="Our Vision">
+              <div class="card-body border bg-white p-4">
+                <div class="entry-header mb-3">
+                  <h2 class="card-title entry-title h4 mb-0">
+                    <a class="link-dark text-decoration-none" href="#!">Our Vision</a>
+                  </h2>
+                </div>
+                <p class="card-text entry-summary text-secondary mb-3">From sleek modernism to timeless elegance, we infuse every creation with a touch of our artistic ingenuity. As a design agency, great design can shape perceptions, inspire action, and leave an indelible mark on the world.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-6">
+          <article>
+            <div class="card border-0">
+              <img class="card-img-top img-fluid m-0" loading="lazy" src="./assets/img/about-img-2.jpg" alt="Our Approach">
+              <div class="card-body border bg-white p-4">
+                <div class="entry-header mb-3">
+                  <h2 class="card-title entry-title h4 mb-0">
+                    <a class="link-dark text-decoration-none" href="#!">Our Approach</a>
+                  </h2>
+                </div>
+                <p class="card-text entry-summary text-secondary mb-3">Welcome to our design agency, where creativity knows no bounds and innovation takes center stage. We are a team of dedicated designers, strategists, and visionaries with a passion for transforming ideas into captivating visuals.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

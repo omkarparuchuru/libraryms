@@ -5,6 +5,54 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 }
+.banner {
+    height: 300px;
+    width: 100%;
+    background-image: url(images/librarybackground.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #6e8efb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #5b77e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /* Header styling */
 .may {
@@ -16,14 +64,14 @@ body {
     padding: 20px;
     position: relative;
     overflow: hidden;
-    height: 100px;
+    height: 49px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .may img {
     position: absolute;
     left: 20px;
-    height: 80px;
+    height: 92px;
     width: auto;
     z-index: 2; /* Ensures the logo appears above the marquee */
 }
@@ -74,9 +122,9 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.section > .sectiontitle a:hover {
+/* .section > .sectiontitle a:hover {
     background-color: #0078d4;
-}
+} */
 
 /* Grid layout improvements */
 .section2, .section3 {
